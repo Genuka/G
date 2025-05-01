@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Achievements</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Life's Achievements</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <div>My Achievements</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="achievements/2017.html">2017</a>
-      <a href="achievements/2018.html">2018</a>
-      <a href="achievements/2019.html">2019</a>
-      <!-- Add more years here -->
+  <header>
+    <div class="profile">
+      <img src="your-profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Your Name</h1>
     </div>
-  </nav>
-  <div class="container">
-    <h1>Welcome to My Achievements</h1>
-    <p>This website showcases my achievements year by year starting from 2017.</p>
-  </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="timeline">
+      <h2>My Journey</h2>
+      <div class="year-card" onclick="location.href='2017.html';">
+        <h3>2017</h3>
+        <p>Highlights and achievements from 2017.</p>
+      </div>
+      <div class="year-card" onclick="location.href='2018.html';">
+        <h3>2018</h3>
+        <p>Highlights and achievements from 2018.</p>
+      </div>
+      <div class="year-card" onclick="location.href='2019.html';">
+        <h3>2019</h3>
+        <p>Highlights and achievements from 2019.</p>
+      </div>
+      <!-- Add more years as needed -->
+    </section>
+  </main>
 </body>
 </html>
