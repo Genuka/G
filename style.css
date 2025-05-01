@@ -1,29 +1,95 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {
-  background-color: #333;
-  color: white;
+body {
+  background: #f2f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
   padding: 1rem;
+  text-align: center;
+}
+
+.profile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
-nav a {
-  color: white;
-  margin: 0 1rem;
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 3px solid #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
   text-decoration: none;
+  color: #ecf0f1;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #1abc9c;
 }
 
-.container {
+main {
   padding: 2rem;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #34495e;
+}
+
+.year-card {
+  background: #fff;
+  border-left: 5px solid #3498db;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.year-card:hover {
+  transform: scale(1.02);
+  background: #eaf2f8;
+}
+
+.year-card h3 {
+  color: #2980b9;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .year-card {
+    width: 95%;
+  }
 }
