@@ -118,6 +118,12 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
+.card {
+  width: 100%;
+  max-width: 280px;
+  text-align: center; /* Center the text inside the card */
+}
+
 
 .card:hover {
   transform: translateY(-5px);
